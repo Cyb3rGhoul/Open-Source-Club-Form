@@ -127,13 +127,18 @@
             preloader.style.display = 'none'; // Hide the preloader
             terminal.style.display = 'block'; // Show the terminal
             typeWriter(h1Element, 'git clone https://github.com/OpenSourceClub-VITB/Temp-Registration', 20, function() {
-                typeWriter(h3Element1, 'Cloning into \'Temp-Registration\'...', 20, function() {
-                    typeWriter(h3Element2, 'remote: Enumerating objects: 7, done.', 20, function() {
-                        typeWriter(h3Element3, 'remote: Counting objects: 100% (4/4), done.', 20, function() {
-                            typeWriter(h3Element4, 'remote: Compressing objects: 100% (3/3), done.', 20, function() {
-                                typeWriter(h3Element5, 'remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 0', 20, function() {
-                                    typeWriter(h3Element6, 'Receiving objects: 100% (4/4), 12.47 MiB | 109.00 MiB/s, done.', 20, function() {
-                                        typeWriter(h1Element7, '[Open-Source@Club ~]$ cd Temp-Registration', 20, function() {
+                typeWriter(h3Element1, 'Cloning into \'Temp-Registration\'...', 15, function() {
+                    h3Element2.innerHTML = 'remote: ';
+                    typeWriter(h3Element2, 'Enumerating objects: 7, done.', 10, function() {
+                        h3Element4.innerHTML = 'remote: ';
+                        typeWriter(h3Element3, 'Counting objects: 100% (4/4), done.', 10, function() {
+                            h3Element5.innerHTML = 'remote: ';
+                            typeWriter(h3Element4, 'Compressing objects: 100% (3/3), done.', 10, function() {
+                                h3Element6.innerHTML = 'remote: ';
+                                typeWriter(h3Element5, 'Total 7 (delta 0), reused 0 (delta 0), pack-reused 0', 10, function() {
+                                    typeWriter(h3Element6, 'Receiving objects: 100% (4/4), 12.47 MiB | 109.00 MiB/s, done.', 10, function() {
+                                        h1Element7.innerHTML = '[Open-Source@Club ~]$ ';
+                                        typeWriter(h1Element7, 'cd Temp-Registration', 10, function() {
                                         });
                                     });
                                 });
@@ -143,9 +148,9 @@
                 });
             });
         }, 1000);
-    setTimeout(function() {
-            window.location.href = "form.html"; // Redirect to index.html after preloading
-        }, 11000);
+    // setTimeout(function() {
+    //         window.location.href = "form.html"; // Redirect to index.html after preloading
+    //     }, 8000);
     </script>
 </body>
 </html>
